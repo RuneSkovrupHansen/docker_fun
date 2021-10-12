@@ -12,6 +12,8 @@ RUN DIRNAME="foobar" /bin/bash -c 'mkdir "$DIRNAME"; mv "$FILENAME" "$DIRNAME"'
 
 CMD /bin/bash -c 'echo filename: "$FILENAME", content: "$CONTENT", dirname: "$DIRNAME"' 
 
-# The output of building the Dockerfile is:
+# Output of building the Dockerfile is:
+
 # filename: foo, content: bar, dirname:
+
 # Since $DIRNAME has not persisted into the container

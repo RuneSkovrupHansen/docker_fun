@@ -1,2 +1,2 @@
 docker build -t environment .
-docker run -it environment
+docker run -it --rm environment
